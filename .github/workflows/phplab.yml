@@ -16,6 +16,6 @@ jobs:
       - name: Install Dependencies
         run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
       - name: Lint code with Pint
-        run: ./vendor/bin/pint --test
+        run: ./vendor/bin/pint
       - name: Run unit tests
         run: ./vendor/bin/phpunit tests/Unit
