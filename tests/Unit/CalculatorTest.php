@@ -1,4 +1,3 @@
-
 <?php
 
 namespace Tests\Unit;
@@ -8,15 +7,23 @@ use App\Services\Calculator;
 
 class CalculatorTest extends TestCase
 {
-    public function test_add()
+    private Calculator $calculator;
+
+    protected function setUp(): void
     {
-        $calculator = new Calculator;
-        $this->assertEquals(5, $calculator->add(2, 3));
+        parent::setUp();
+        $this->calculator = new Calculator();
     }
 
-    public function test_subtract()
+    public function test_add_numbers(): void
     {
-        $calculator = new Calculator;
-        $this->assertEquals(3, $calculator->subtract(5, 2));
+        $result = $this->calculator->add(2.5, 3.5);
+        $this->assertEquals(6.0, $result);
+    }
+
+    public function test_subtract_numbers(): void
+    {
+        $result = $this->calculator->subtract(10.0, 4.0);
+        $this->assertEquals(6.0, $result);
     }
 }
