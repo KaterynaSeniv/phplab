@@ -1,3 +1,4 @@
+
 <?php
 
 namespace App\Services;
@@ -14,3 +15,4 @@ class Calculator
         return $x - $y;
     }
 }
+
