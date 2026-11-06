@@ -1,4 +1,4 @@
-# PHP Lab Project (phplab)
+# PHP Lab Project
 
 [![PHP CI Application](https://github.com/KaterynaSeniv/phplab/actions/workflows/phplab.yml/badge.svg)](https://github.com/KaterynaSeniv/phplab/actions/workflows/phplab.yml)
 
